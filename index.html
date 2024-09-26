@@ -22,7 +22,7 @@
     <div class="container-fluid align-content-md-center align-content-lg-center align-content-xl-center vh-100 vw-100">
         <div class="page_menu d-md-flex  bg-white">
 
-            <form class="px-3 py-4 d-grid gap-3 form_calculator">
+            <form class="px-3 py-4 d-grid gap-3 px-lg-4  form_calculator">
 
                 <div class="row row-cols-md-2 m-0">
                     <h2 class="px-0 col-12 col-md-8 title">Mortgage Calculator</h2>
@@ -72,26 +72,32 @@
                     <h5>Calculate Repayments</h5>
                 </button>
             </form>
-        <!--     <div class="view px-3 py-4 pb-md-5 gap-md-0 d-grid gap-2">
-                <h2>Your results</h2>
-                <p class="m-md-0">Your results are shown below based on the information you provided.
-                    To adjust the results, edit the form and click “calculate repayments” again.</p>
-    
-                <div class="rounded-3 px-3 py-4 d-grid gap-1 view_sub ">
-                    <label>Your monthly repayments</label>
-                    <input type="number" class=" border-0 bg-transparent w-100 result_1">
-                    <hr class="bg-white my-1">
-                    <label>Total you'll repay over the term</label>
-                    <input type="number" class=" border-0 bg-transparent text-white text w-100 result_2">
-                </div>
-            </div> -->
-            <div class="p-3 d-flex flex-column align-items-center justify-content-md-center gap-2 view">
-                <img src="./mortgage-repayment-calculator-main/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg">
-                <h2>Results shown here</h2>
-                <p class="text-center">Complete the form and click “calculate repayments” to see what
-                    your monthly repayments would be.</p>
+            <div>
+                
             </div>
-
+            <div class="px-3 py-4 px-lg-4 gap-2 d-md-flex align-items-md-center view">
+                <div class="view_results pb-md-5 hidden">
+                    <h2 class="pb-md-4 pb-xl-5">Your results</h2>
+                    <p class="pb-md-3 pb-lg-5 my-lg-0">Your results are shown below based on the information you provided.
+                        To adjust the results, edit the form and click “calculate repayments” again.</p>
+                    
+                    <div class="rounded-3 px-3 py-4 d-grid gap-1 view_sub ">
+                        <label>Your monthly repayments</label>
+                        <input type="number" class=" border-0 bg-transparent w-100 result_1">
+                        <hr class="bg-white my-1">
+                        <label>Total you'll repay over the term</label>
+                        <input type="number" class=" border-0 bg-transparent text-white text w-100 result_2">
+                    </div>
+                </div>
+                <div class=" text-center view_block">
+                    <img src="./mortgage-repayment-calculator-main/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg">
+                    <h2>Results shown here</h2>
+                    <p class="text-center">Complete the form and click “calculate repayments” to see what
+                        your monthly repayments would be.</p>
+                </div>
+                
+            </div>
+            
         </div>
         
 

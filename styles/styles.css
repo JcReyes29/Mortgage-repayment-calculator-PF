@@ -24,6 +24,8 @@ label>figure {
 }
 .selections > .type_option{
     border: solid 0.1rem #243c48dc;
+    font-weight: bold;
+    color:#243c48;
 }
 .calculate_button {
     background-color: hsl(61, 70%, 52%);
@@ -83,7 +85,10 @@ label>input {
 .view_sub> .result_2{
     font-size: 1.2rem;
 }
-.view > h2{
+.view_results > h2{
+    color: hsl(0, 0%, 100%);
+}
+.view_block > h2{
     color: hsl(0, 0%, 100%);
 }
 
@@ -98,7 +103,7 @@ label>input {
     
     }
     .view{
-    width: 50%;
+    width:50%;
     border-bottom-left-radius:55px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -161,4 +166,10 @@ label>input {
     div >h2{
         font-size: 1.4rem;
     }
+}
+
+/* Display results */
+
+.hidden{
+    display: none;
 }
