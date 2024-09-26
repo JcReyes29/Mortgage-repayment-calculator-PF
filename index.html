@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./js/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Proyecto Final</title>
+</head>
+
+<body>
+    <div class="container-fluid align-content-md-center align-content-lg-center align-content-xl-center vh-100 vw-100">
+        <div class="page_menu d-md-flex  bg-white">
+
+            <form class="px-3 py-4 d-grid gap-3 form_calculator">
+
+                <div class="row row-cols-md-2 m-0">
+                    <h2 class="px-0 col-12 col-md-8 title">Mortgage Calculator</h2>
+                    <button class="border-0 px-0 bg-white text-start text-md-end col-12 col-md-4 clear">Clear All</button>
+                </div>
+                <div class="row m-0 gap-2">
+                    <label class="px-0">Mortgage Amount</label>
+                    <label class="px-0 rounded-3 d-flex  align-items-center" id="icons">
+                        <img src="./images/simbolo-de-moneda-dolar.png" alt="simbolo dolar" width="18" height="18">
+                        <input type="number" class="px-3 rounded-end">
+                    </label>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="row row-cols-md-2">
+                    <div class="row col-md-6 m-0 gap-2">
+                        <label class="px-0">Mortgage Term</label>
+                        <label class="px-0 rounded-3 d-flex align-items-center" id="icons">
+                            <input type="number" class="px-3 rounded-start">
+                            <figure>years</figure>
+                        </label>
+                    </div>
+                    <div class="row col-md-6 m-0 gap-2">
+                        <label class="px-0">Interest Rate</label>
+                        <label class="px-0 rounded-3 d-flex align-items-center" id="icons">
+                            <input type="number" class="px-3 rounded-start">
+                            <img src="./images/porcentaje-de-descuento.png" alt="simbolo de porcentaje" width="18" height="18">
+                        </label>
+        
+                    </div>
+                </div>
+                
+                <div class="row  m-0  gap-2 selections">
+                    <label class="px-0 ">Mortgage Type</label>
+                    <label class="rounded-3 d-flex align-items-center px-3 gap-3 type_option">
+                        <input type="radio" name="option" class=""> Repayment
+                    </label>
+                    <label class="rounded-3 d-flex align-items-center px-3 gap-3 type_option">
+                        <input type="radio" name="option" class=""> Interest Only
+                    </label>
+                </div>
+                <button
+                    class=" m-0 rounded-pill border-0 calculate d-flex align-content-center justify-content-center gap-2 py-2 calculate_button">
+                    <img src="./mortgage-repayment-calculator-main/mortgage-repayment-calculator-main/assets/images/icon-calculator.svg"
+                        alt="imagen de calculadora" width="25">
+                    <h5>Calculate Repayments</h5>
+                </button>
+            </form>
+        <!--     <div class="view px-3 py-4 pb-md-5 gap-md-0 d-grid gap-2">
+                <h2>Your results</h2>
+                <p class="m-md-0">Your results are shown below based on the information you provided.
+                    To adjust the results, edit the form and click “calculate repayments” again.</p>
+    
+                <div class="rounded-3 px-3 py-4 d-grid gap-1 view_sub ">
+                    <label>Your monthly repayments</label>
+                    <input type="number" class=" border-0 bg-transparent w-100 result_1">
+                    <hr class="bg-white my-1">
+                    <label>Total you'll repay over the term</label>
+                    <input type="number" class=" border-0 bg-transparent text-white text w-100 result_2">
+                </div>
+            </div> -->
+            <div class="p-3 d-flex flex-column align-items-center justify-content-md-center gap-2 view">
+                <img src="./mortgage-repayment-calculator-main/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg">
+                <h2>Results shown here</h2>
+                <p class="text-center">Complete the form and click “calculate repayments” to see what
+                    your monthly repayments would be.</p>
+            </div>
+
+        </div>
+        
+
+
+
+    </div>
+
+</body>
+
+</html>
