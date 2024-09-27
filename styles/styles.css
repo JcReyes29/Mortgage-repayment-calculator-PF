@@ -18,7 +18,7 @@ label>figure {
     color: #243c48;
 }
 /* Border color and bg */
-#icons {
+.sub label:nth-child(2) {
     background-color: hsl(202, 86%, 94%);
     border: solid 0.1rem #243c48dc;
 }
@@ -81,15 +81,28 @@ label>input {
 .view_sub> .result_1{
     color:hsl(61, 70%, 52%);
     font-size: 2rem;
+    height: 50px;
 }
 .view_sub> .result_2{
     font-size: 1.2rem;
+    height: 20px;
 }
 .view_results > h2{
     color: hsl(0, 0%, 100%);
 }
 .view_block > h2{
     color: hsl(0, 0%, 100%);
+}
+/* Style error message */
+.row> span{
+    display:none ;
+    color: hsl(4, 69%, 50%);
+    font-size:0.8rem;
+    font-weight:600;
+    
+}
+.error + span{
+    display:block;
 }
 
 /* Medidas, fon size h2*/
@@ -172,4 +185,9 @@ label>input {
 
 .hidden{
     display: none;
+}
+
+.icons{
+    background-color: hsl(4, 69%, 50%);
+    border: solid 0.1rem hsl(4, 69%, 50%);
 }
