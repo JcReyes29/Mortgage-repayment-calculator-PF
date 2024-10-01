@@ -1,7 +1,19 @@
 const form = document.querySelector('.form_calculator');
 const viewResults = document.querySelector('.view_results');
 const viewBlock = document.querySelector('.view_block');
+const m = document.querySelector('#amount');
+const a = document.querySelector('#years');
+const i = document.querySelector('#interest');
 
+m.addEventListener('input', () => {
+    m.value = m.value.replace(/[^0-9]/, "")
+})
+a.addEventListener('input', () => {
+    a.value = a.value.replace(/[^0-9]/, "")
+})
+i.addEventListener('input', () => {
+    i.value = i.value.replace(/[^0-9]/, "")
+})
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
