@@ -94,8 +94,8 @@ label>input {
     color: hsl(0, 0%, 100%);
 }
 /* Style error message */
-.row> span{
-    display:none ;
+.row > span{
+    display:none;
     color: hsl(4, 69%, 50%);
     font-size:0.8rem;
     font-weight:600;
@@ -185,9 +185,4 @@ label>input {
 
 .hidden{
     display: none;
-}
-
-.icons{
-    background-color: hsl(4, 69%, 50%);
-    border: solid 0.1rem hsl(4, 69%, 50%);
 }
